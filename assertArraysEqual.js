@@ -1,5 +1,8 @@
 //ARRAY COMPARISON FUNCTION
 const eqArrays = function(arr1, arr2) {
+  if (arr1.length === 0 && arr2.length === 0) {
+    return true;
+  }
   if (arr1.length !== arr2.length) {
     return false;
   } else {
@@ -16,11 +19,11 @@ const eqArrays = function(arr1, arr2) {
 }
 
 //ASSERTION FUNCTION FOR ARRAY COMPARISON
-const assertArraysEqual = function(arr1, arr2) {
-  if (eqArrays(arr1, arr2) === true) {
-    console.log(`✅✅✅ Assertion Passed: ${arr1} === ${arr2}`);
+const assertArraysEqual = function(actual, expected) {
+  if (eqArrays(actual, expected) === true) {
+    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
   } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${arr1} !== ${arr2}`);
+    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
   }
 };
 

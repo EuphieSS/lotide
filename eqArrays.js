@@ -1,5 +1,8 @@
 //ARRAY COMPARISON FUNCTION
 const eqArrays = function(arr1, arr2) {
+  if (arr1.length === 0 && arr2.length === 0) {
+    return true;
+  }
   if (arr1.length !== arr2.length) {
     return false;
   } else {
@@ -26,3 +29,4 @@ const assertEqual = function(actual, expected) {
 
 //TEST CODE
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
+assertEqual(eqArrays([],[]), true);
