@@ -4,14 +4,14 @@ const countOnly = function(allItems, itemsToCount) {
   for (const item of allItems) {
     if (itemsToCount[item]) {
       if (!results[item]) {
-      results[item] = 0;
+        results[item] = 0;
       }
-      results[item]++
+      results[item]++;
     }
     
   }
   return results;
-}
+};
 
 //FUNCTION IMPLEMENTATION
 const assertEqual = function(actual, expected) {
