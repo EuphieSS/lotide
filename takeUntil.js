@@ -39,6 +39,15 @@ const takeUntil = function(array, callback) {
   }
   return results;
 };
+/*
+const takeUntil = function(array, callback) {
+  for (let item of array) {
+    if (callback(item)) {
+      return array = array.slice(0, array.indexOf(item));
+    }
+  }
+};
+*/
 
 
 //TEST CASE

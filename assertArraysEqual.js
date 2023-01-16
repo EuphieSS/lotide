@@ -16,7 +16,7 @@ const eqArrays = function(arr1, arr2) {
     }
     return finalOutput;
   }
-}
+};
 
 //ASSERTION FUNCTION FOR ARRAY COMPARISON
 const assertArraysEqual = function(actual, expected) {
