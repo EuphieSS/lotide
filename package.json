@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@EuphieSS/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "This library was published for learning purposes as part of my learnings at Lighthouse Labs.",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/EuphieSS/lotide.git"
   },
-  "author": "",
+  "author": "Samma YuNing Su",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/EuphieSS/lotide/issues"
