@@ -28,7 +28,7 @@ const assertArraysEqual = function(actual, expected) {
 };
 
 
-//LETTERPOSITIONS FUNCTION
+//LETTER-POSITIONS FUNCTION
 const letterPositions = function(sentence) {
   const results = {};
   sentence = sentence.toLowerCase();
@@ -41,7 +41,10 @@ const letterPositions = function(sentence) {
     }
   }
   return results;
-}
+};
+
+module.exports = letterPositions;
+
 
 //TEST CASE
 assertArraysEqual(letterPositions("helLo").l, [2, 3]);

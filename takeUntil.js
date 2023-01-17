@@ -39,6 +39,9 @@ const takeUntil = function(array, callback) {
   }
   return results;
 };
+
+module.exports = takeUntil;
+
 /*
 const takeUntil = function(array, callback) {
   for (let item of array) {

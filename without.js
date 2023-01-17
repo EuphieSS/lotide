@@ -6,7 +6,10 @@ const without = function(source, itemsToRemove) {
     newArr.push(item);
   }
   return newArr;
-}
+};
+
+module.exports = without;
+
 
 //ARRAY COMPARISON FUNCTION
 const eqArrays = function(arr1, arr2) {

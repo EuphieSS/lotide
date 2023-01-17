@@ -37,6 +37,9 @@ const map = function(array, callback) {
   return results;
 };
 
+module.exports = map;
+
+
 //TEST CASE
 assertArraysEqual(map([1, 2, 3], num => num * 10), [10, 20, 30]);
 assertArraysEqual(map(["wolf", "owl", "worm"], word => word[0].toUpperCase()), ["W", "O", "W"]);
