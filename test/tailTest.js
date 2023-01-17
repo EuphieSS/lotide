@@ -1,19 +1,13 @@
-const assertEqual = require("../assertEqual");
+const assert = require("chai").assert;
 const tail = require("../tail");
 
-//TEST CODE
-const result = tail(["Hello", "Lighthouse", "Labs"]);
-assertEqual(result.length, 2);
-assertEqual(result[0], "Lighthouse");
-assertEqual(result[1], "Labs");
-/* assertEqual(result.toString(), ["Lighthouse", "Labs"].toString());
-INCORRECT SOLUTION. The toString() method works for this test code, if however,
-the arrays being compared look like this ([1, 2, 3], [1, 2, "3"]), this method will
-not return the correct result... <The assertion function is too simple to compare 
-array values. Turning the (result) array and the (expected) parameter to string
-allows these two values to compare directly.> */
+describe("tail", () => {
+  it("return 2, 3 for [1, 2, 3]", () => {
+    assert.deepEqual(tail([1, 2, 3]), [2, 3]);
+  });
 
-//TEST CASE: Check the original array
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words);
-assertEqual(words.length, 3); //original array should still have 3 elements
+  it("return 'Lighthouse', 'Labs' for ['Hello', 'Lighthouse', 'Labs']", () => {
+    assert.deepEqual(tail(['Hello', 'Lighthouse', 'Labs']), ['Lighthouse', 'Labs']);
+  });
+
+});
